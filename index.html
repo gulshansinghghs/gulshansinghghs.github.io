@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gulshan Bhardwaj | Portfolio</title>
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#0a3d62;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h2{
+color:white;
+font-size:20px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#82ccdd;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0a3d62,#3c6382);
+color:white;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:white;
+color:#0a3d62;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#82ccdd;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+color:#0a3d62;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2>Gulshan Bhardwaj</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#school">School</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+<h1>Gulshan Bhardwaj</h1>
+<p>Computer Faculty</p>
+<p>20 Years of Teaching Experience</p>
+
+<button onclick="scrollToSection('about')">
+Learn More
+</button>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+I am <b>Gulshan Bhardwaj</b>, working as a <b>Computer Faculty</b> with over
+<b>20 years of experience</b> in teaching computer education.
+</p>
+
+<p>
+I am passionate about technology, digital literacy, and helping students
+develop strong computer skills for their future careers.
+</p>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+<h2>Experience</h2>
+
+<div class="card">
+
+<h3>20 Years Teaching Experience</h3>
+<img src="img/logo.jpg">
+<p>
+I have been teaching computer education for the last two decades,
+helping students understand important topics like:
+</p>
+
+<ul>
+<li>Computer Fundamentals</li>
+<li>Information Technology</li>
+<li>Digital Skills</li>
+<li>Practical Computer Applications</li>
+</ul>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+<h2>Certifications</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>ICT Certification</h3>
+<p>Certified in Information & Communication Technology.</p>
+</div>
+
+<div class="card">
+<h3>NIELIT ROPAR</h3>
+<p>Completed ICT training with NIELIT ROPAR.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SCHOOL -->
+
+<section id="school">
+<h2>School / Workplace</h2>
+
+<div class="card">
+
+<h3>GHS QILAJIWAN SINGH</h3>
+
+<p>
+Currently serving as Computer Faculty at
+<b>Government High School Qilajiwan Singh</b>.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card contact">
+
+<p><b>Email:</b> your-email@example.com</p>
+<p><b>Phone:</b> +91 XXXXX XXXXX</p>
+<p><b>Location:</b> India</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Gulshan Bhardwaj | Portfolio Website</p>
+
+</footer>
+
+<script>
+
+function scrollToSection(id){
+
+document.getElementById(id).scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+/* Simple scroll animation */
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity=1;
+entry.target.style.transform="translateY(0)";
+}
+});
+});
+
+cards.forEach(card=>{
+card.style.opacity=0;
+card.style.transform="translateY(40px)";
+card.style.transition="0.6s";
+observer.observe(card);
+});
+
+</script>
+
+</body>
+</html>
